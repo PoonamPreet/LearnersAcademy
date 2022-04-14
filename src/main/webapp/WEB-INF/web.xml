@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>LearnersAcademy1</display-name>
+	<servlet>
+		<display-name>Login</display-name>
+		<servlet-name>loginController</servlet-name>
+		<servlet-class>com.hibernate.controller.loginController</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>Success</display-name>
+		<servlet-name>Success</servlet-name>
+		<servlet-class>com.hibernate.controller.Success</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>Class</display-name>
+		<servlet-name>classController</servlet-name>
+		<servlet-class>com.hibernate.controller.classController</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>Student</display-name>
+		<servlet-name>studentController</servlet-name>
+		<servlet-class>com.hibernate.controller.studentController</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>Teacher</display-name>
+		<servlet-name>teacherController</servlet-name>
+		<servlet-class>com.hibernate.controller.teacherController</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>Subjects</display-name>
+		<servlet-name>subjectController</servlet-name>
+		<servlet-class>com.hibernate.controller.subjectController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginController</servlet-name>
+		<url-pattern>/Login</url-pattern>
+
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Success</servlet-name>
+		<url-pattern>/Success</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>subjectController</servlet-name>
+		<url-pattern>/Subject</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>studentController</servlet-name>
+		<url-pattern>/Student</url-pattern>
+
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>teacherController</servlet-name>
+		<url-pattern>/Teacher</url-pattern>
+
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>classController</servlet-name>
+		<url-pattern>/Class</url-pattern>
+
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

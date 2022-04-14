@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.hibernate.bean.Login" table="Login3">
+		<id column="ID" name="id" type="java.lang.Integer" >
+		<generator class="increment"/>
+		</id>
+		<property column="username" name="username"
+			type="java.lang.String" />
+		<property column="PASSWORD" name="password" type="string" />
+	</class>
+	<class name="com.hibernate.bean.Student" table="students">
+		<id column="std_id" name="id" type="java.lang.Integer" >
+		<generator class="increment"/>
+		</id>
+		<property column="std_name" name="std_name"
+			type="java.lang.String" />
+		<property column="sub_name" name="sub_name" type="string" />
+		<property column="class_name" name="class_name" type="string" />
+	</class>
+	<class name="com.hibernate.bean.Teachers" table="teachers">
+		<id column="t_id" name="t_id" type="java.lang.Integer" >
+		<generator class="increment"/>
+		</id>
+		<property column="t_name" name="t_name"
+			type="java.lang.String" />
+		<property column="t_sub" name="t_sub" type="string" />
+		<property column="t_class" name="t_class" type="string" />
+	</class>
+	<class name="com.hibernate.bean.Subjects" table="subjects">
+		<id column="sub_id" name="sub_id" type="java.lang.Integer" >
+		<generator class="increment"/>
+		</id>
+		<property column="sub_name" name="sub_name"
+			type="java.lang.String" />
+		<property column="time" name="time" type="string" />
+		<property column="class_name" name="class_name" type="string" />
+	</class>
+	<class name="com.hibernate.bean.Classes" table="classes">
+		<id column="class_id" name="class_id" type="java.lang.Integer" >
+		<generator class="increment"/>
+		</id>
+		<property column="class_name" name="class_name"
+			type="java.lang.String" />
+		</class>
+		</hibernate-mapping>
